@@ -16,3 +16,9 @@ cpp-project/bazel-bin
 cpp-project/bazel-out
 cpp-project/bazel-testlogs
 cpp-project/bazel-cpp-project
+
+py-project/MODULE.bazel.lock
+py-project/bazel-bin
+py-project/bazel-out
+py-project/bazel-testlogs
+py-project/bazel-py-project

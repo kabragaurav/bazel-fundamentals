@@ -17,6 +17,12 @@ bazel run //:ProjectRunner
 bazel run //:salutations
 ```
 
+#### Python3 Project
+```
+cd py-project/app
+bazel run //app:main
+```
+
 ### Visualize dependencies
 ```
 bazel query  --notool_deps --noimplicit_deps "deps(//:*)" --output graph
