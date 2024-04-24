@@ -1,2 +1,8 @@
 cpp-project/bin
 .DS_Store
+bazel-bin
+java-project/bazel-java-project
+bazel-out
+bazel-testlogs
+.vscode/
+java-project/.eclipse/

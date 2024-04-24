@@ -1,19 +1,18 @@
 java_binary(
     name = "ProjectRunner",
-    srcs = glob(["src/main/java/com/example/*.java"]),
-    main_class = "main.java.com.example.ProjectRunner",
+    srcs = glob(["src/main/java/com/greeting/*.java"]),
+    main_class = "main.java.com.greeting.ProjectRunner",
 )
 java_binary(
     name="salutations",
-    main_class = "main.java.com.example.Salutations",
+    main_class = "main.java.com.dependency.Salutations",
     runtime_deps = [":textio"],
     visibility = ["//visibility:public"],
 )
 
-
 java_library(
     name="textio",
-    srcs = ["src/main/java/com/example/Salutations.java"],
+    srcs = ["src/main/java/com/dependency/Salutations.java"],
     deps = ["@maven//:org_beryx_text_io"],
-    #visibility = ["//src/main/java/com/example/cmdline:__pkg__"],
+    #visibility = ["//src/main/java/com/dependency/cmdline:__pkg__"],
 )
