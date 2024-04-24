@@ -1,8 +1,18 @@
 ### Notes can be found [here](https://quip.com/U7rcAwFLIRxH/Bazel-Fundamentals).
 
+---
+
 ### Running
 
+#### C++ Project
 ```
+cd cpp-project
+bazel run //greeting:helloworld
+```
+
+#### Java Project
+```
+cd java-project
 bazel run //:ProjectRunner
 bazel run //:salutations
 ```
@@ -63,4 +73,4 @@ digraph mygraph {
 
 OR from <a href="https://dreampuf.github.io/GraphvizOnline">this</a>
 
-![Dependency graph](./java-project/images/dependencies.svg)
+![Dependency graph](./assets/images/dependencies.svg)
