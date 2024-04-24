@@ -1,4 +1,4 @@
-package main.java.com.example;
+package main.java.com.dependency;
 import org.beryx.textio.TextIO;
 import org.beryx.textio.TextIoFactory;
 
