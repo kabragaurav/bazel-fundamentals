@@ -4,3 +4,26 @@
 #
 # For more details, please check https://github.com/bazelbuild/bazel/issues/18958
 ###############################################################################
+bazel_dep(name = "rules_jvm_external", version = "5.3")
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+maven.install(
+    artifacts = [
+        "org.beryx:text-io:3.4.1",
+        "org.apache.commons:commons-lang3:3.12.0" ,
+       
+ 
+
+
+    ],
+    fetch_sources = True,
+    repositories = [
+       "https://maven.google.com",
+        "https://repo1.maven.org/maven2",
+        "https://jcenter.bintray.com/",
+        "http://uk.maven.org/maven2",
+        
+
+
+    ],
+)
+use_repo(maven, "maven")
