@@ -1,3 +1,5 @@
+load("@rules_java//java:defs.bzl", "java_binary", "java_library", "java_test")
+package(default_visibility = ["//visibility:public"])
 java_binary(
     name = "ProjectRunner",
     srcs = glob(["src/main/java/com/greeting/*.java"]),
@@ -15,4 +17,16 @@ java_library(
     srcs = ["src/main/java/com/dependency/Salutations.java"],
     deps = ["@maven//:org_beryx_text_io"],
     #visibility = ["//src/main/java/com/dependency/cmdline:__pkg__"],
+)
+
+java_library(
+    name = "restclientlib",
+    srcs = glob(["src/main/java/com/webclient/RestClient.java"]),
+    deps = ["@maven//:org_apache_httpcomponents_httpclient"],
+)
+
+java_binary(
+    name = "restclient",
+    main_class = "main.java.com.webclient.RestClient",
+    runtime_deps = [":restclientlib"],
 )
