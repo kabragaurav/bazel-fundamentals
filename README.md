@@ -34,6 +34,14 @@ cd py-project/app
 bazel run //app:main
 ```
 
+#### Rules
+```
+cd rules/gen-rules
+bazel build //:concat   # See output (target) in bazel-bin/concat.txt
+bazel  build //:process_data  # See output (target) in bazel-bin/output.txt
+bazel  build //:copy_files    # See output (target) in bazel-bin/copy_file.txt
+```
+
 ### Visualize dependencies
 ```
 bazel query  --notool_deps --noimplicit_deps "deps(//:*)" --output graph
