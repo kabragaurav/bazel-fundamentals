@@ -3,7 +3,9 @@
 ---
 
 ### Running
-
+```
+bazel --version   # bazel 7.0.1
+```
 #### C++ Project
 ```
 cd cpp-project
