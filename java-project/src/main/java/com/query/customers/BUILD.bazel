@@ -1,0 +1,13 @@
+java_library(
+    name = "gaurav",
+    srcs = ["Gaurav.java"],
+    tags = ["hcp"],
+    visibility = ["//visibility:public"],
+)
+
+java_library(
+    name = "keshav",
+    srcs = ["Keshav.java"],
+    tags = ["ras"],
+    visibility = ["//visibility:public"],
+)
