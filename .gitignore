@@ -23,3 +23,15 @@ py-project/bazel-out
 py-project/bazel-testlogs
 py-project/bazel-py-project
 py-project/.eclipse
+
+rules/gen-rules/MODULE.bazel.lock
+rules/gen-rules/bazel-bin
+rules/gen-rules/bazel-out
+rules/gen-rules/bazel-testlogs
+rules/gen-rules/bazel-gen-rules
+
+rules/custom-rules/MODULE.bazel.lock
+rules/custom-rules/bazel-bin
+rules/custom-rules/bazel-out
+rules/custom-rules/bazel-testlogs
+rules/custom-rules/bazel-custom-rules
