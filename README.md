@@ -15,6 +15,17 @@ bazel run //greeting:helloworld
 cd java-project
 bazel run //:ProjectRunner
 bazel run //:salutations
+bazel run //:restclient
+```
+
+Queries:
+```
+cd java-project
+bazel run //:runner
+bazel query //src/main/java/com/query/dishes/...
+bazel query --noimplicit_deps "deps(:runner)"
+bazel query "rdeps(//... , //src/main/java/com/query/ingredients:salt)"
+bazel query 'attr(tags, "hcp", //src/main/java/com/query/customers/...)'
 ```
 
 #### Python3 Project

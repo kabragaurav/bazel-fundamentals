@@ -30,3 +30,12 @@ java_binary(
     main_class = "main.java.com.webclient.RestClient",
     runtime_deps = [":restclientlib"],
 )
+
+java_binary(
+    name = "runner",
+    srcs = glob(["src/main/java/com/query/*.java"]),
+    main_class = "main.java.com.query.Runner",
+    deps = [
+        "//src/main/java/com/query/restaurant:udupi",
+    ],
+)

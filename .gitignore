@@ -22,3 +22,4 @@ py-project/bazel-bin
 py-project/bazel-out
 py-project/bazel-testlogs
 py-project/bazel-py-project
+py-project/.eclipse
