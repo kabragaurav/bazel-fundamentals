@@ -1,9 +1,9 @@
 genrule(
-        name = "concat",
-        srcs = ["f2.txt", "f1.txt", "f3.txt"],
-        outs= ["concat.txt"],
-        #cmd = "cat $(location //:f1.txt) $(location //:f2.txt) > $@",
-        cmd= "cat $(SRCS) > $@",
+    name = "concat",
+    srcs = ["f2.txt", "f1.txt", "f3.txt"],
+    outs= ["concat.txt"],
+    #cmd = "cat $(location //:f1.txt) $(location //:f2.txt) > $@",
+    cmd= "cat $(SRCS) > $@",
 )
 
 genrule(
@@ -30,5 +30,4 @@ genrule(
     srcs = [":files", ":copy_files"],
     outs = ["cat_files.txt"],
     cmd =  "cat $(locations :files) $(location :copy_files)> $@",
-
 )

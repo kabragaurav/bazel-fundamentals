@@ -35,11 +35,23 @@ bazel run //app:main
 ```
 
 #### Rules
+Gen Rules
 ```
 cd rules/gen-rules
-bazel build //:concat   # See output (target) in bazel-bin/concat.txt
+bazel build //:concat         # See output (target) in bazel-bin/concat.txt
 bazel  build //:process_data  # See output (target) in bazel-bin/output.txt
 bazel  build //:copy_files    # See output (target) in bazel-bin/copy_file.txt
+bazel build //:cat_files      # See output (target) in bazel-bin/cat_files.txt
+```
+
+Custom Rules <br/>
+`name` in `BUILD` is the target
+```
+cd rules/custom-rules
+bazel build //:bin1                # See output (target) in bazel-bin/bin1
+bazel build //:bin2                # See output (target) in bazel-bin/bin2
+bazel build //:bin                 # See output (target) in bazel-bin/bin
+bazel run //:say_hello_to_gaurav   # This is equivalent to bazel build //:hello-gaurav; bazel run //:say_hello_to_gaurav
 ```
 
 ### Visualize dependencies
