@@ -15,6 +15,7 @@ bazel run //greeting:helloworld
 cd java-project
 bazel run //:ProjectRunner
 bazel run //:salutations
+bazel run //:restclient
 ```
 
 #### Python3 Project
