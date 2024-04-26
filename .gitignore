@@ -43,3 +43,9 @@ macros/bazel-bin
 macros/bazel-out
 macros/bazel-testlogs
 macros/bazel-macros
+
+pythontoolchain/MODULE.bazel.lock
+pythontoolchain/bazel-bin
+pythontoolchain/bazel-out
+pythontoolchain/bazel-testlogs
+pythontoolchain/bazel-pythontoolchain
