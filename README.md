@@ -56,6 +56,13 @@ bazel build //:bin                 # See output (target) in bazel-bin/bin
 bazel run //:say_hello_to_gaurav   # This is equivalent to bazel build //:hello-gaurav; bazel run //:say_hello_to_gaurav
 ```
 
+#### Macros
+```
+cd macros
+bazel build //:hello_world_code_dive    # See output in bazel-bin/hello_world_code_dive
+bazel build //:hello_world_everyone     # See output in bazel-bin/hello_world_everyone
+```
+
 ### Visualize dependencies
 ```
 bazel query  --notool_deps --noimplicit_deps "deps(//:*)" --output graph

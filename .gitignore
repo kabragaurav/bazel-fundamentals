@@ -35,3 +35,11 @@ rules/custom-rules/bazel-bin
 rules/custom-rules/bazel-out
 rules/custom-rules/bazel-testlogs
 rules/custom-rules/bazel-custom-rules
+rules/custom-rules/.eclipse/
+rules/gen-rules/.eclipse/
+
+macros/MODULE.bazel.lock
+macros/bazel-bin
+macros/bazel-out
+macros/bazel-testlogs
+macros/bazel-macros
