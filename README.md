@@ -73,7 +73,6 @@ Sample <a href="https://dreampuf.github.io/GraphvizOnline/#digraph%20mygraph%20%
 ![Dependency graph](./assets/images/dependencies.svg)
 
 
-
 ## Some Advanced Concepts
 
 #### Queries
@@ -88,3 +87,13 @@ bazel cquery 'deps(//:concat)'   # configurable query
 cd pythontoolchain
 bazel run //:bin       # It should print 3.10 (version mentioned in WORKSPACE) but in latest bazel version, it takes system version like 3.12.2 but you will see 3.10 version is being downloaded
 ```
+
+### Links 
+- [Hermetic Python Toolchain with Bazel](https://www.anthonyvardaro.com/blog/hermetic-python-toolchain-with-bazel).
+- [Writing custom Bazel C++ rules](https://ltekieli.com/writing-custom-bazel-c-rules/)
+- [Writing Bazel rules: library rule, depsets, providers](https://jayconrod.com/posts/107/writing-bazel-rules--library-rule--depsets--providers)
+- [User-defined build settings for Bazel builds](https://www.grahambrooks.com/software-development/2021/08/30/user-defined-bazel-arguments.html)
+
+For debugging,
+- [Run Configurations IJ](https://ij.bazel.build/docs/run-configurations.html)
+- [Bazel VS Marketplace](https://marketplace.visualstudio.com/items?itemName=BazelBuild.vscode-bazel)
